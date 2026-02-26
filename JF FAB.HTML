@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JF FABRICATION | Welding & Fabrication Bhiwadi</title>
+  <meta name="description" content="JF FABRICATION offers expert welding, rolling shutters, tin sheds, iron gates & custom fabrication in Bhiwadi, Rajasthan. Call 8769715000.">
+  <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23333'/%3E%3Cpath d='M30 30 L70 30 L60 70 L40 70 Z' fill='%23f97316' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <style>
+    /* ----- RESET & VARIABLES ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --dark-bg: #0a0c0e;
+      --surface: #1a1e22;
+      --card-bg: #23282e;
+      --accent: #f97316;
+      --accent-hover: #fb923c;
+      --text-light: #f0f4f8;
+      --text-muted: #b0b7c2;
+      --border-dim: #2f373f;
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.5);
+      --transition: all 0.2s ease-in-out;
+    }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* ----- HEADER ----- */
+    .site-header {
+      background: #0c0f12;
+      border-bottom: 2px solid var(--accent);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #f97316 0%, #ffb347 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 10px rgba(249,115,22,0.3);
+    }
+    .header-contact {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .header-contact a {
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .header-contact a:hover {
+      color: var(--accent);
+    }
+    /* ----- buttons etc */
+    .btn {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 4px;
+      transition: var(--transition);
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background-color: var(--accent);
+      color: #0a0c0e;
+      border-color: var(--accent);
+    }
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .btn-outline {
+      border: 2px solid var(--accent);
+      color: var(--text-light);
+      background: transparent;
+    }
+    .btn-outline:hover {
+      background-color: var(--accent);
+      color: #0a0c0e;
+      transform: translateY(-2px);
+    }
+    /* email button specific */
+    .email-btn-large {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      background: #ea4335;  /* Gmail red */
+      color: white;
+      padding: 1.2rem 2.5rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      transition: var(--transition);
+      border: none;
+      width: 100%;
+      margin-top: 1.5rem;
+      border: 2px solid transparent;
+    }
+    .email-btn-large:hover {
+      background: #d33426;
+      transform: translateY(-4px);
+      box-shadow: 0 15px 25px -8px rgba(234,67,53,0.5);
+    }
+    .email-btn-large svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .section-header h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+    }
+    .section-header h2 span {
+      color: var(--accent);
+    }
+    .section-header .divider {
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      margin: 0.75rem auto 1rem;
+      border-radius: 2px;
+    }
+    /* hero */
+    .hero {
+      min-height: 85vh;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800"%3E%3Crect width="1200" height="800" fill="%23222" /%3E%3Cpath d="M0 600 L200 450 L400 580 L600 400 L800 520 L1000 380 L1200 500 L1200 800 L0 800 Z" fill="%23333" /%3E%3Ccircle cx="300" cy="300" r="50" fill="%23f97316" opacity="0.4" /%3E%3C/svg%3E') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+    }
+    .hero-content {
+      max-width: 800px;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 8vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 span {
+      color: var(--accent);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1.5rem;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    /* about */
+    .about {
+      background: var(--surface);
+      padding: 5rem 0;
+    }
+    .about-card {
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 12px;
+      border-left: 6px solid var(--accent);
+      box-shadow: var(--shadow-md);
+    }
+    /* services grid */
+    .services {
+      padding: 5rem 0;
+      background: var(--dark-bg);
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: var(--transition);
+      border: 1px solid var(--border-dim);
+      cursor: pointer;
+      display: block;
+      color: inherit;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent);
+      box-shadow: 0 20px 30px -10px rgba(249,115,22,0.3);
+    }
+    .service-icon {
+      background-color: #2f373f;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      transition: var(--transition);
+    }
+    .service-card:hover .service-icon {
+      background-color: var(--accent);
+    }
+    .service-icon svg {
+      width: 42px;
+      height: 42px;
+      stroke: var(--text-light);
+      stroke-width: 1.8;
+      fill: none;
+    }
+    .service-card h3 {
+      font-size: 1.5rem;
+    }
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    /* why us */
+    .why-us {
+      background: var(--surface);
+      padding: 5rem 0;
+    }
+    .bullets-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .bullet-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 40px 12px 12px 40px;
+      border-left: 6px solid var(--accent);
+    }
+    .bullet-marker {
+      background: var(--accent);
+      color: #0a0c0e;
+      font-weight: 800;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* gallery */
+    .gallery {
+      padding: 5rem 0;
+      background: var(--dark-bg);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-item {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      border: 1px solid var(--border-dim);
+    }
+    .gallery-item:hover {
+      transform: scale(1.02);
+      border-color: var(--accent);
+    }
+    .gallery-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, #2a323b, #1a1e22);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      gap: 0.5rem;
+    }
+    .gallery-placeholder svg {
+      width: 40px;
+      height: 40px;
+      stroke: var(--accent);
+    }
+    .gallery-placeholder span {
+      background: #00000040;
+      padding: 0.25rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+    }
+    /* contact - UPDATED: removed form, added email button */
+    .contact {
+      background: var(--surface);
+      padding: 5rem 0;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .contact-info, .contact-email-block {
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 24px;
+    }
+    .info-line {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+    .map-link {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      transition: var(--transition);
+    }
+    .map-link:hover {
+      color: #ffb347;
+    }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      margin: 1.5rem 0;
+      transition: var(--transition);
+    }
+    .whatsapp-btn:hover {
+      background: #20b859;
+      transform: translateY(-3px);
+    }
+    /* email button side styling */
+    .email-intro {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .email-intro span {
+      color: var(--accent);
+    }
+    .email-note {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+    }
+    .footer {
+      background: #0c0f12;
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 1px solid var(--border-dim);
+    }
+    @media (max-width: 700px) {
+      .header-flex { flex-direction: column; gap: 0.8rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER with bold JF FABRICATION -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo">JF FABRICATION</div>
+      <div class="header-contact">
+        <a href="tel:8769715000">📞 8769715000</a>
+        <a href="https://wa.me/918769715000" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>JF FABRICATION <span>Welding & Metal Works</span></h1>
+      <p>Trusted fabrication in Bhiwadi, Rajasthan — 10+ years experience, quality materials, on-time delivery.</p>
+      <div class="hero-buttons">
+        <a href="tel:8769715000" class="btn btn-primary">📞 Call 8769715000</a>
+        <a href="https://wa.me/918769715000" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+      <div class="section-header"><h2>ABOUT <span>US</span></h2><div class="divider"></div></div>
+      <div class="about-card">
+        <p><strong>JF FABRICATION</strong> brings over <strong>10+ years</strong> of expertise in Bhiwadi, Rajasthan. We serve industrial and residential clients across Khushkhera, Neemrana, Alwar & Dharuhera. From rolling shutters to custom steel structures, we use premium materials and deliver on time. <strong>Call us: 8769715000</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES CARDS (click to open new page with random images) -->
+  <section class="services">
+    <div class="container">
+      <div class="section-header"><h2>OUR <span>SERVICES</span></h2><div class="divider"></div></div>
+      <div class="service-grid">
+        <a class="service-card" href="#" onclick="openServicePage('Rolling Shutter'); return false;">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 8 L20 8 M4 12 L20 12 M4 16 L20 16 M4 20 L20 20 M4 4 L20 4"/></svg></div>
+          <h3>Rolling Shutter</h3>
+          <p>Heavy-duty manual & motorized shutters for shops & garages.</p>
+        </a>
+        <a class="service-card" href="#" onclick="openServicePage('Tin Shed Fabrication'); return false;">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 12 L12 4 L20 12 L20 20 L4 20 Z"/></svg></div>
+          <h3>Tin Shed Fabrication</h3>
+          <p>Weather-resistant sheds, carports, industrial roofs — custom size.</p>
+        </a>
+        <a class="service-card" href="#" onclick="openServicePage('Iron Gate & Grill'); return false;">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M6 4 L6 20 M18 4 L18 20 M4 8 L20 8 M4 16 L20 16"/></svg></div>
+          <h3>Iron Gate & Grill</h3>
+          <p>Decorative gates, window grills, railings — security with style.</p>
+        </a>
+        <a class="service-card" href="#" onclick="openServicePage('Welding Services'); return false;">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 4 L12 20 M7 9 L17 15 M7 15 L17 9"/></svg></div>
+          <h3>Welding Services</h3>
+          <p>Mig/Tig & arc welding for repairs, structures, equipment.</p>
+        </a>
+        <a class="service-card" href="#" onclick="openServicePage('Custom Fabrication'); return false;">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M8 6 L16 6 L16 14 L8 14 Z M6 18 L18 18"/></svg></div>
+          <h3>Custom Fabrication</h3>
+          <p>Unique designs: furniture, brackets, machine parts, art.</p>
+        </a>
+        <a class="service-card" href="#" onclick="openServicePage('Structural Steel'); return false;">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 4 L20 4 L20 20 L4 20 Z M8 8 L16 8 M8 12 L16 12 M8 16 L16 16"/></svg></div>
+          <h3>Structural Steel</h3>
+          <p>Beams, columns, platforms for commercial/industrial.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header"><h2>WHY <span>CHOOSE US</span></h2><div class="divider"></div></div>
+      <div class="bullets-grid">
+        <div class="bullet-item"><span class="bullet-marker">✓</span><span>Experienced Team (10+ yrs)</span></div>
+        <div class="bullet-item"><span class="bullet-marker">✓</span><span>Quality Materials</span></div>
+        <div class="bullet-item"><span class="bullet-marker">✓</span><span>Affordable Pricing</span></div>
+        <div class="bullet-item"><span class="bullet-marker">✓</span><span>On-Time Delivery</span></div>
+        <div class="bullet-item"><span class="bullet-marker">✓</span><span>Customer Satisfaction</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY (placeholder images) -->
+  <section class="gallery">
+    <div class="container">
+      <div class="section-header"><h2>OUR <span>PROJECTS</span></h2><div class="divider"></div></div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><div class="gallery-placeholder"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15L16 10L5 21" stroke="currentColor"/></svg><span>rolling_shutter_1.jpg</span></div></div>
+        <div class="gallery-item"><div class="gallery-placeholder"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15L16 10L5 21" stroke="currentColor"/></svg><span>tin_shed_2.jpg</span></div></div>
+        <div class="gallery-item"><div class="gallery-placeholder"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15L16 10L5 21" stroke="currentColor"/></svg><span>iron_gate_3.jpg</span></div></div>
+        <div class="gallery-item"><div class="gallery-placeholder"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15L16 10L5 21" stroke="currentColor"/></svg><span>welding_4.jpg</span></div></div>
+        <div class="gallery-item"><div class="gallery-placeholder"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15L16 10L5 21" stroke="currentColor"/></svg><span>custom_fab_5.jpg</span></div></div>
+        <div class="gallery-item"><div class="gallery-placeholder"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15L16 10L5 21" stroke="currentColor"/></svg><span>structural_6.jpg</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION – REQUEST QUOTE REMOVED, REPLACED WITH GMAIL BUTTON (3‑COLUMN TEMPLATE) -->
+  <section class="contact">
+    <div class="container">
+      <div class="section-header"><h2>CONTACT <span>US</span></h2><div class="divider"></div></div>
+      <div class="contact-grid">
+        <!-- left side: classic contact info -->
+        <div class="contact-info">
+          <h3>JF FABRICATION</h3>
+          <div class="info-line">📍 Bhiwadi, Rajasthan (Industrial Area)</div>
+          <div class="info-line">📞 <a href="tel:8769715000">8769715000</a></div>
+          <div class="info-line">📧 <a href="mailto:jffabricationbhiwadi@gmail.com">jffabricationbhiwadi@gmail.com</a></div>
+          <div class="info-line">🕒 Mon–Sat 8am–7pm</div>
+          <!-- DIRECT GOOGLE MAPS LINK (your share link) -->
+          <div class="info-line">🗺️ <a class="map-link" href="https://share.google/tZjekaGCcUuf93H0X" target="_blank">📍 Open my shop location (Google Maps)</a></div>
+          <a href="https://wa.me/918769715000" target="_blank" class="whatsapp-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M19.077 4.928C17.191 3.041 14.683 2 12.006 2 6.798 2 2.548 6.193 2.54 11.393c-.003 1.747.456 3.457 1.328 4.985L2.25 21.75l5.422-1.56c1.473.84 3.14 1.287 4.85 1.288h.004c5.2 0 9.456-4.195 9.464-9.396.004-2.51-.97-4.873-2.863-6.764zM12.02 20.184h-.003c-1.498 0-2.967-.403-4.238-1.16l-.304-.18-3.255.936.97-3.15-.197-.315a8.28 8.28 0 0 1-1.273-4.43c.007-4.547 3.706-8.246 8.26-8.246 2.205 0 4.28.862 5.84 2.426a8.205 8.205 0 0 1 2.42 5.86c-.008 4.55-3.706 8.25-8.26 8.25z"/></svg>
+            WhatsApp 8769715000
+          </a>
+        </div>
+
+        <!-- right side: email button with pre-filled 3-column details (Name, Phone, Work Type) -->
+        <div class="contact-email-block">
+          <div class="email-intro">📋 <span>Quick email</span> with details</div>
+          <div class="email-note">
+            Click the button below – a draft email will open with a ready-made 3‑column table.<br>
+            Just fill in your Name, Phone, and Work Type, then send.
+          </div>
+          
+          <!-- Gmail button with pre-filled body containing a 3‑column table -->
+          <a href="mailto:jffabricationbhiwadi@gmail.com?subject=Request%20for%20quote%20-%20JF%20FABRICATION&body=%0D%0A%0D%0AHello%20JF%20FABRICATION%2C%0D%0AI%20would%20like%20to%20request%20a%20quote%20for%20fabrication%20work.%20Below%20are%20my%20details%3A%0D%0A%0D%0A%0D%0A-----------------------%0D%0A|%20Name%20%20%20%20%20%20%20%20%7C%20Phone%20%20%20%20%20%20%20%7C%20Work%20Type%20%20%20%20%20%20%20%7C%0D%0A-----------------------%0D%0A|%20%5BYour%20Name%5D%20%7C%20%5BYour%20Phone%5D%20%7C%20%5Be.g.%20rolling%20shutter%5D%20%7C%0D%0A-----------------------%0D%0A%0D%0A%0D%0AAdditional%20details%3A%20%0D%0A%0D%0A%0D%0AThanks%2C%20I'll%20wait%20for%20your%20call." class="email-btn-large" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            ✉️ Email us (Gmail) with 3‑column template
+          </a>
+          <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.9rem;">The button opens your default email app. If you use Gmail, the table will appear automatically. Simply replace the placeholders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 JF FABRICATION — Bhiwadi, Rajasthan | ☎ 8769715000</p>
+  </footer>
+
+  <!-- JavaScript for service pages with random images (unchanged, but kept) -->
+  <script>
+    function openServicePage(serviceName) {
+      const imageUrls = [
+        'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&auto=format',
+        'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&auto=format',
+        'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&auto=format',
+        'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format',
+        'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&auto=format'
+      ];
+      // pick 3 random images
+      const shuffled = [...imageUrls].sort(() => 0.5 - Math.random());
+      const selected = shuffled.slice(0, 3);
+      
+      const win = window.open('', '_blank');
+      win.document.write(`
+        <html><head><title>JF FABRICATION - ${serviceName}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body { font-family: 'Inter', sans-serif; background: #111; color: #eee; margin:0; padding:2rem; text-align:center; }
+          h1 { color: #f97316; }
+          .gallery { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem; }
+          .gallery img { width: 300px; height: 240px; object-fit: cover; border-radius: 16px; border: 2px solid #f97316; }
+          .back { display: inline-block; margin-top: 2rem; background: #f97316; color: black; padding: 0.8rem 2rem; border-radius: 40px; text-decoration: none; font-weight: bold; }
+        </style>
+        </head><body>
+        <h1>🔧 JF FABRICATION - ${serviceName}</h1>
+        <p>High-quality fabrication work in Bhiwadi & nearby areas. Call us: 8769715000</p>
+        <div class="gallery">
+          <img src="${selected[0]}" alt="fabrication work"><img src="${selected[1]}" alt="project image"><img src="${selected[2]}" alt="completed work">
+        </div>
+        <p style="margin-top:2rem;">📍 Serving Bhiwadi, Khushkhera, Neemrana, Alwar, Dharuhera</p>
+        <a class="back" href="#" onclick="window.close()">Close & return</a>
+        <p><small>📞 8769715000 | 📧 jffabricationbhiwadi@gmail.com</small></p>
+        <p><small>🗺️ <a href="https://share.google/tZjekaGCcUuf93H0X" target="_blank" style="color:#f97316;">Open shop location</a></small></p>
+      </body></html>
+    `);
+    win.document.close();
+    }
+  </script>
+</body>
+</html>
